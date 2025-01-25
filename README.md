@@ -6,4 +6,4 @@ The aim of this repository is to demonstrate the use of Git, LaTeX, and GitHub A
 
 ## Contents
 - `main.tex`: LaTeX source file.
-- `.github/workflows/latex.yml`: GitHub Actions workflow.
+- `.github/workflows/finalassignmentLatex.yml`: GitHub Actions workflow.
