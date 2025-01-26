@@ -1,4 +1,4 @@
-name: Compile LaTeX to PDF
+name: Latex Compiler to PDF
 on:
   push:
     tags:
