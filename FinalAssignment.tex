@@ -14,8 +14,8 @@
 \section{Git and GitHub}
 \subsection{Repository Initialization and Commits}
 \textbf{Write about how you set up the repository for this assignment. Explain every step in detail.}
-\textcolor{green}{For this I used GitHub website. I chose "Create New..." then "New Repository". After that I set the Repository; named it "FinalAssignment", chose it to be "Public" and add a "README file".}
-
+\textcolor{green}{
+    For this I used GitHub website. I chose "Create New..." then "New Repository". After that I set the Repository; named it "FinalAssignment", chose it to be "Public" and add a "README file".}
 \subsection{GitHub Actions for LaTeX Compilation}
 \textbf{Provide a walkthrough of setting up GitHub Actions to automatically compile your LaTeX document and any challenges you encountered.}
 \textcolor{green}{}
@@ -29,34 +29,38 @@
     g, go to the next position of cursor in change list
     \item \textbf{Marks} Marks allow us to label cursor position. It can be used to label import
     locations in file for easy navigation.
-    m<char> set label <char> to current cursor position
-    ‘<char> go to position labeled <char>
+    m\textlesschar\textgreater set label \textlesschar\textgreater to current cursor position
+    ‘\textlesschar\textgreater go to position labeled \textlesschar\textgreater
     \item \textbf{Tags} Tags are also labels used for jumping through them. Tags are read from the
     tags file.
-    Important keys
-    :tag <tagname> position the cursor on tag <tagname> position
+    Important keys:
+    tag \textlesstagname\textgreater position the cursor on tag \textlesstagname\textgreater position
     CTRL-T go back after the previous jumps
-    :ptag <tagname> show tag in the preview window (see :help preview-window)
+    :ptag \textlesstagname\textgreater show tag in the preview window (see :help preview-window)
     CTRL-W z close preview window (opened by above 2 commands)\end{itemize}
 }
 \subsection{Memory Profiling}
 \subsubsection{Memory Leak}
 \textbf{In short, explain what memory leaks are and how they might happen in your program.}
-\textcolor{green}{It happens when a computer program poorly handles memory allocations and fails to free up the memory that is no longer required.}
+\textcolor{green}{
+    It happens when a computer program poorly handles memory allocations and fails to free up the memory that is no longer required.}
 \subsubsection{Memory Profilers}
 \textbf{Read about a tool called Valgrind and write about their purpose and how it helps when memory leaks happen.}
-\textcolor{green}{Valgrind is an instrumentation framework for building dynamic analysis tools.}
+\textcolor{green}{
+    Valgrind is an instrumentation framework for building dynamic analysis tools.}
 
 \section{GNU/Linux Bash Scripting}
 \subsection{fzf}
 \textbf{What is fuzzy searching? Give a short description.}
-\textcolor{green}{A fuzzy search is a technique that uses search algorithms to find strings that match patterns approximately. It's particularly useful for helping users find webpages without having to know exactly what they're looking for or how a word is spelled.}
+\textcolor{green}{
+    A fuzzy search is a technique that uses search algorithms to find strings that match patterns approximately. It's particularly useful for helping users find webpages without having to know exactly what they're looking for or how a word is spelled.}
 \textbf{Install fzf on your machine and give a description of what the following command does:
 ls | fzf}
-\textcolor{green}{lists all files and directories.
-Pipes this list into fzf.
-Opens an interactive interface where you can filter the list of files. As you type, fzf narrows down the options based on your input.
-Once you find the file or directory you want, you can select it}
+\textcolor{green}{
+    lists all files and directories.
+    Pipes this list into fzf.
+    Opens an interactive interface where you can filter the list of files. As you type, fzf narrows down the options based on your input.
+    Once you find the file or directory you want, you can select it}
 \subsection{Using fzf to find your favorite PDF}
 \textbf{You might have came across moments when you want to open up a certain PDF when studying for your final exams but finding the directory of that PDF is a very gruesome and tiring process. In this section, we will be using fzf to find our PDF in seconds! We will be going step by step on how to find your file and use fzf to select it.
 \begin{enumerate}
@@ -67,12 +71,12 @@ Once you find the file or directory you want, you can select it}
 \subsection{Opening the file using Zathura}
 \textbf{Now that have selected which PDF we want to open, we can use a very minimalistic program called Zathura to open it. Write a command that uses the commands above to open the file using Zathura.}
 
-\section{Git and FOSS}
+\section{Git \& FOSS}
 \subsection{Issues}
 \textbf{Create a sample issue in the repository below and attach its screenshot in your LaTeX document: https://github.com/MiliAxe/CW-Final}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{Screenshot.png}
+    \includegraphics[width=1\textwidth]{Screenshot.png}
     \caption{my issue in GitHub website}
     \label{fig:my_image}
 \end{figure}
