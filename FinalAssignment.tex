@@ -2,8 +2,7 @@
 
 \usepackage{xcolor}
 \usepackage{graphicx}
-\usepackage{mathptmx}
-\renewcommand\familydefault{\rmfamily}
+\usepackage{times}
 
 \title{Final Assignment}
 \author{Ehsan Abdollahi Nasab}
@@ -32,17 +31,17 @@
         \texttt{g;} go to the previous position of cursor in change list
         \texttt{g,} go to the next position of cursor in change list
         \item \textbf{Marks:} Marks allow us to label cursor position. It can be used to label import locations in file for easy navigation.
-        \texttt{m<char>} set label \textlesschar\textgreater to current cursor position
-        \texttt{`<char>} go to position labeled \textlesschar\textgreater
+        \texttt{m<char>} set label \texttt{<char>} to current cursor position
+        \texttt{`<char>} go to position labeled \texttt{<char>}
         \item \textbf{Tags:} Tags are also labels used for jumping through them. Tags are read from the tags file.
         Important keys:
         \texttt{tag <tagname>} position the cursor on tag \texttt{<tagname>} position
         \texttt{CTRL-T} go back after the previous jumps
-        \textt{:ptag <tagname>} show tag in the preview window (see :help preview-window)
+        \texttt{:ptag <tagname>} show tag in the preview window (see :help preview-window)
         \texttt{CTRL-W z} close preview window (opened by above 2 commands)
-    \end{itemize}
+    \end{itemize}}
     \color{black}
-    }
+    
     \subsection{Memory Profiling}
     \subsubsection{Memory Leak}
     \textbf{In short, explain what memory leaks are and how they might happen in your program.}
@@ -67,16 +66,17 @@
         lists all files and directories.
         Pipes this list into fzf.
         Opens an interactive interface where you can filter the list of files. As you type, fzf narrows down the options based on your input.
-        Once you find the file or directory you want, you can select it
-    \color{black}}
+        Once you find the file or directory you want, you can select it}
+    \color{black}
     \subsection{Using fzf to find your favorite PDF}
-    \textbf{You might have came across moments when you want to open up a certain PDF when studying for your final exams but finding the directory of that PDF is a very gruesome and tiring process. In this section, we will be using fzf to find our PDF in seconds! We will be going step by step on how to find your file and use fzf to select it.
+    \textbf{You might have came across moments when you want to open up a certain PDF when studying for your final exams but finding the directory of that PDF is a very gruesome and tiring process. In this section, we will be using fzf to find our PDF in seconds! We will be going step by step on how to find your file and use fzf to select it.}
     \begin{enumerate}
         \item We first need to list the directory of all the files with the extension .PDF. Write a command to list the directory of all the files with the extension .PDF
         \textcolor{green}{\texttt{fd -e pdf}}
         \item Now we have to select the PDF we want using fzf. Write a command to use fzf to select a PDF from the data we gathered above.
-        \textcolor{green}{\text{fd -e pdf | fzf}}
-    \end{enumerate}}
+        \textcolor{green}{\texttt{fd -e pdf | fzf}}
+    \end{enumerate}
+    
     \subsection{Opening the file using Zathura}
     \textbf{Now that have selected which PDF we want to open, we can use a very minimalistic program called Zathura to open it. Write a command that uses the commands above to open the file using Zathura.}
 
