@@ -24,21 +24,20 @@
 \subsection{Vim Advanced Features}
 \textbf{Explore and document 3 advanced features of Vim that were not covered in class.}
 \textcolor{green}{\begin{itemize}
-    \item \textbf{Change-list jumps} helps in iterating through recent cursor positions (where changes were made)
+    \item \textbf{Change-list jumps:} helps in iterating through recent cursor positions (where changes were made)
     g; go to the previous position of cursor in change list
     g, go to the next position of cursor in change list
-    \item \textbf{Marks} Marks allow us to label cursor position. It can be used to label import
+    \item \textbf{Marks:} Marks allow us to label cursor position. It can be used to label import
     locations in file for easy navigation.
     m\textlesschar\textgreater set label \textlesschar\textgreater to current cursor position
-    ‘\textlesschar\textgreater go to position labeled \textlesschar\textgreater
-    \item \textbf{Tags} Tags are also labels used for jumping through them. Tags are read from the
+     \textlesschar\textgreater go to position labeled \textlesschar\textgreater
+    \item \textbf{Tags:} Tags are also labels used for jumping through them. Tags are read from the
     tags file.
     Important keys:
     tag \textlesstagname\textgreater position the cursor on tag \textlesstagname\textgreater position
     CTRL-T go back after the previous jumps
     :ptag \textlesstagname\textgreater show tag in the preview window (see :help preview-window)
     CTRL-W z close preview window (opened by above 2 commands)\end{itemize}
-}
 \subsection{Memory Profiling}
 \subsubsection{Memory Leak}
 \textbf{In short, explain what memory leaks are and how they might happen in your program.}
@@ -47,8 +46,8 @@
 \subsubsection{Memory Profilers}
 \textbf{Read about a tool called Valgrind and write about their purpose and how it helps when memory leaks happen.}
 \textcolor{green}{
-    Valgrind is an instrumentation framework for building dynamic analysis tools.}
-
+    Valgrind is an instrumentation framework for building dynamic analysis tools.
+}
 \section{GNU/Linux Bash Scripting}
 \subsection{fzf}
 \textbf{What is fuzzy searching? Give a short description.}
@@ -69,7 +68,8 @@ ls | fzf}
     \item Now we have to select the PDF we want using fzf. Write a command to use fzf to select a PDF from the data we gathered above.
     \textcolor{green}{fd -e pdf | fzf}\end{enumerate}}
 \subsection{Opening the file using Zathura}
-\textbf{Now that have selected which PDF we want to open, we can use a very minimalistic program called Zathura to open it. Write a command that uses the commands above to open the file using Zathura.}
+\textbf{Now that have selected which PDF we want to open, we can use a very minimalistic program called Zathura to open it. Write a command that uses the commands above to open the file using Zathura.
+}
 
 \section{Git \& FOSS}
 \subsection{Issues}
