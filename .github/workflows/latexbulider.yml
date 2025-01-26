@@ -1,4 +1,4 @@
-name: Latex Compiler to PDF
+name: Compile LaTeX to PDF
 on:
   push:
     tags:
@@ -8,12 +8,21 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Compile LaTeX document
         uses: xu-cheng/texlive-action@v2
         with:
           root_file: FinalAssignment.tex
+          extra_packages:
+            latexmk
+            texlive-fonts-recommended
+            texlive-latex-extra
+            texlive-science
+            texlive-pictures
+
+      - name: List files (for debugging)
+        run: ls -R
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
